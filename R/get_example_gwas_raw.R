@@ -38,7 +38,7 @@ get_example_gwas_raw <- function(storage_dir = tempdir(),
         message("Importing pe-existing file.")
     } else {
         message(paste("Downloading example GWAS:", trait))
-        options(timeout = 60 * 5)
+        #options(timeout = 60 * 5)
         utils::download.file(
             url = URL,
             destfile = gwas_sumstats_path
