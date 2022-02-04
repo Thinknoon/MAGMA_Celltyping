@@ -38,7 +38,7 @@ get_genome_ref <- function(genome_ref_path = NULL,
                                                            which="cache"),
                            method = c("magma","piggback"),
                            population = c("eur", "afr", "amr", "eas", "sas"),
-                           timeout = 60 * 5,
+                           timeout = 6000 * 5,
                            verbose = TRUE) {
     #### population ####
     population <- tolower(population[1])
